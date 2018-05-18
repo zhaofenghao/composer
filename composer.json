@@ -7,6 +7,8 @@
             "email": "zhaofenghao@corp-ci.com"
         }
     ],
+    "type": "library",
+    "minimum-stability": "dev",
     "require":{
         "monolog/monolog": "1.0.*",
         "php": ">=5.4.0"
