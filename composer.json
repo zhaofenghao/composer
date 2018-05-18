@@ -1,0 +1,22 @@
+{
+    "name": "zhaofenghao/composer",
+    "description": "composer_test",
+    "authors": [
+        {
+            "name": "zfh",
+            "email": "zhaofenghao@corp-ci.com"
+        }
+    ],
+    "require":{
+        "monolog/monolog": "1.0.*",
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ford\\Escape\\": "src/Ford/Escape",
+            "Ford\\Fusion\\": "src/Ford/Fusion",
+            "Ford\\Focus\\": "src/Ford/Focus",
+            "Ford\\Fiesta\\": "src/Ford/Fiesta"
+        }
+    }
+}
