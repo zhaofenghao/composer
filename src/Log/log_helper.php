@@ -1,3 +1,4 @@
+namespace Log;
 <?php
 if(!function_exists('doTest')){
     function doTest($value){
