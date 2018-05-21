@@ -1,5 +1,5 @@
-namespace Log;
 <?php
+namespace Log;
 if(!function_exists('doTest')){
     function doTest($value){
         $file_name = __DIR__.'/../logs/doTest_'.date('Y_m_d',time());
