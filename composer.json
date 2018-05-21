@@ -19,7 +19,7 @@
             "Ford\\Fusion\\": "src/Ford/Fusion",
             "Ford\\Focus\\": "src/Ford/Focus",
             "Ford\\Fiesta\\": "src/Ford/Fiesta",
-            "Log\\"         : "src/Log/log_helper.php"
+            "Log\\          ": "src/Log/"
         }
     }
 }
