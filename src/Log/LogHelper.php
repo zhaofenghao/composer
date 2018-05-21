@@ -3,7 +3,11 @@ namespace Log;
 class LogHelper{
 
     public static function doTest($value){
-        $file_name = __DIR__.'/../logs/doTest_'.date('Y_m_d',time());
+        $dir = substr(__DIR__,0,strpos(__DIR__,'vendor')).'logs';
+        if (!is_dir($dir)){
+            mkdir($dir);
+        }
+        $file_name = $dir.'/doTest_'.date('Y_m_d',time());
         //        file_put_contents(__DIR__.'/../logs/doTest_'.date('Y_m_d',time()),serialize($value)."\n\n",FILE_APPEND);
         //        if ( file_exists($file_name)){
         //            $res = unlink($file_name);
@@ -12,6 +16,20 @@ class LogHelper{
     }
 
 }
+
+
+
+//namespace Log;
+//if(!function_exists('doTest')){
+//    function doTest($value){
+//        $file_name = __DIR__.'/../logs/doTest_'.date('Y_m_d',time());
+////        file_put_contents(__DIR__.'/../logs/doTest_'.date('Y_m_d',time()),serialize($value)."\n\n",FILE_APPEND);
+////        if ( file_exists($file_name)){
+////            $res = unlink($file_name);
+////        }
+//        file_put_contents($file_name,isset($value) ? print_r($value,true)."\n\n" : var_dump($value,true)."\n\n",FILE_APPEND);
+//    }
+//}
 
 
 
